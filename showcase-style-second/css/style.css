@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body style*/
+body{
+    font-family: Tahoma, sans-serif;
+    background-color: #333333; /*important style*/
+    color: #ffffff;
+}
+
+.showcase_heading{
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.showcase_lead{
+    font-size: 1.4rem;
+    padding: 0 15rem 1rem;
+}
+
+#showcase{
+    height: 100vh;
+}
+
+.showcase_content{
+    height: 100%; /*important style*/
+    display: flex; /*start position element center*/
+    flex-direction: column;         /*|*/
+    justify-content: center;        /*|*/
+    align-items: center;           /*\/*/
+    text-align: center; /*end position element center*/
+    position: relative; /*important style for position absolute*/
+}
+
+.showcase_content::before{
+    content: ''; /*important style*/
+    background: url('https://cdn.britannica.com/31/150831-050-8B046AEB/molecule-molecules-beads-droplets-water-form-surface.jpg') no-repeat center center/cover;
+    opacity: 0.3; /*important style*/
+    height: 100%; /*don`t forget height*/
+    width: 100%; /*don`t forget width*/
+    position: absolute; /*important style*/
+    top: 0;
+    left: 0;
+    z-index: -1; /*important style*/
+}
