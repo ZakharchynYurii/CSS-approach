@@ -7,7 +7,7 @@
 /*body style*/
 body{
     font-family: Tahoma, sans-serif;
-    background-color: #333333; /*important style*/
+    background-color: #333333; /*important style*/ /*background-color задасть відтінок затемненню картики*/
     color: #ffffff;
 }
 
