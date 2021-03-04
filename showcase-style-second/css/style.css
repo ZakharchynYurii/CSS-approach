@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+.showcase_heading{
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.showcase_lead{
+    font-size: 1.4rem;
+    padding: 0 15rem 1rem;
+}
+
+#showcase{
+    height: 100vh;
+}
+
+.showcase_content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.showcase_content::before{
+    content: '';
+    background: url(../img/everest.jpg) no-repeat center center/cover;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
