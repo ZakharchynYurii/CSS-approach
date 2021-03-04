@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box_shadows_items{
+    display: flex;
+}
+
+.box_shadows_item1,
+.box_shadows_item2,
+.box_shadows_item3,
+.box_shadows_item4,
+.box_shadows_item5,
+.box_shadows_item6,
+.box_shadows_item7{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fa7c4d;
+    color: #ffffff;
+}
+
+
+/*offset-x | offset-y | color*/
+.box_shadows_item1{
+    box-shadow: 10px 10px teal;
+}
+
+/*offset-x | offset-y | blur-radius | color*/
+.box_shadows_item2{
+    box-shadow: 5px 5px 20px teal;
+}
+
+/*offset-x | offset-y | blur-radius | color ----> Negative value*/
+.box_shadows_item3{
+    box-shadow: -5px -5px 20px teal;
+}
+
+/*offset-x | offset-y | blur-radius | spread-radius |color*/
+.box_shadows_item4{
+    box-shadow: 5px 5px 10px 4px rgba(0,0,0,0.5);
+}
+
+/*inset | offset-x | offset-y | color*/
+.box_shadows_item5{
+    box-shadow: inset -5px -5px teal;
+}
+
+/*inset | offset-x | offset-y | blur-radius | color*/
+.box_shadows_item6{
+    box-shadow: inset -5px -5px 20px teal;
+}
+
+/*multiple shadow*/
+.box_shadows_item7{
+    box-shadow: 5px 5px 20px teal, -5px -5px 20px olive;
+}
