@@ -1,0 +1,71 @@
+@import "variebles";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: $light-color;
+  color: $dark-color;
+  font-family: $primary-font;
+}
+
+header{
+  background: $primary-color;
+  h1{
+    color: $light-color;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+.section{
+  padding: 1rem;
+  &-a{
+    background: $secondary-color;
+    text-align: center;
+    color: $light-color;
+    p{
+      padding: .5rem;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+
+  &-b{
+    background: $dark-color;
+    text-align: center;
+    color: $light-color;
+    p{
+      padding: 0.5rem;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+%btn-shared{
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn{
+  &-light{
+    @extend %btn-shared;
+    background: $light-color;
+    color: $dark-color;
+  }
+
+  &-dark{
+    @extend %btn-shared;
+    background: $dark-color;
+    color: $light-color;
+  }
+}
